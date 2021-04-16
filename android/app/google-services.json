@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "714623822468",
+    "firebase_url": "https://zirkl-development.firebaseio.com",
+    "project_id": "zirkl-development",
+    "storage_bucket": "zirkl-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714623822468:android:937681c1e20eea5e95f0d1",
+        "android_client_info": {
+          "package_name": "com.zirkl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714623822468-scv3enmh5be6thq7i2s1pkt4c93fqpmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zirkl",
+            "certificate_hash": "f1934b6adf22e06989f62feb122fa740580fc4ba"
+          }
+        },
+        {
+          "client_id": "714623822468-agifq82vhomr6rajbk5o3emcfga415gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zirkl",
+            "certificate_hash": "cac1798a190a07ee768671ea6420b80fe5e6965d"
+          }
+        },
+        {
+          "client_id": "714623822468-1tr8p2g44aiaveumfd1o88lrsi7bi972.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-D2vXW-Y5D612vVEurNV9k7PMAU-ThMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714623822468-1tr8p2g44aiaveumfd1o88lrsi7bi972.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
