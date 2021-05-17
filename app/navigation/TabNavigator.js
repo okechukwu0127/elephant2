@@ -1,221 +1,220 @@
-import React from 'react';
-import {createStackNavigator} from 'react-navigation-stack';
-import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {PRIMARY_COLOR} from '../themes/colors';
-import Icon from 'react-native-vector-icons/Feather';
-import Feed from '../containers/Feed';
+import React from "react";
+import { createStackNavigator } from "react-navigation-stack";
+import { createBottomTabNavigator } from "react-navigation-tabs";
+import { PRIMARY_COLOR } from "../themes/colors";
+import Icon from "react-native-vector-icons/Feather";
+import Feed from "../containers/Feed";
 
-import UserSetting from '../containers/UserProfile/setting';
-import NotificationSettings from '../containers/UserProfile/NotificationSettings';
-import UserProfile from '../containers/UserProfile';
-import MainScreen from '../containers/Main';
-import Clubs from '../containers/Clubs';
-import {SvgXml} from 'react-native-svg';
+import UserSetting from "../containers/UserProfile/setting";
+import NotificationSettings from "../containers/UserProfile/NotificationSettings";
+import UserProfile from "../containers/UserProfile";
+import MainScreen from "../containers/Main";
+import Clubs from "../containers/Clubs";
+import { SvgXml } from "react-native-svg";
 
-import DiscoverClub from '../containers/DiscoverClub';
-import ClubMap from '../containers/ClubMap';
-import QRCode from '../containers/QRCode';
-import SearchClub from '../containers/SearchClub';
-import CreateClub from '../containers/CreateClub';
-import ConfirmClub from '../containers/CreateClub/confirm';
-import ClubDetail from '../containers/ClubDetail';
-import AboutUs from '../containers/UserProfile/aboutus';
-import BasicSetting from '../containers/UserProfile/BasicSetting';
-import UserClubSettingEdit from '../containers/UserClubSettingEdit';
-import FeatureShop from '../containers/FeatureShop';
-import UserFeatureShop from '../containers/UserFeatureShop';
-import ClubProfile from '../containers/ClubProfile';
-import ClubEditInfo from '../containers/ClubProfile/ClubEditInfo';
-import ClubAddInfo from '../containers/ClubProfile/ClubAddInfo';
-import EditBoard from '../containers/ClubProfile/EditBoard';
-import EditMember from '../containers/ClubProfile/EditMember';
-import Membership from '../containers/ClubProfile/Membership';
-import Contributions from '../containers/ClubProfile/Contributions';
-import ZirklPay from '../containers/ClubProfile/ZirklPay';
-import MemberProfile from '../containers/MemberProfile';
-import CreateNews from '../containers/News/CreateNews';
-import CreateEvent from '../containers/Event/CreateEvent';
-import MultipleFiles from '../containers/Event/CreateEvent/multiplefiles';
-import MultipleLinks from '../containers/Event/CreateEvent/multiplelinks';
-import LocationView from '../containers/Event/LocationView';
-import CreatePost from '../containers/Post/CreatePost';
-import MultipleImages from '../containers/Impression/CreateImpression/components/MultipleImages';
-import CreateImpression from '../containers/Impression/CreateImpression';
-import ZirklSelect from '../components/ZirklSelect';
-import MembershipSelect from '../components/MembershipSelect';
-import ImagePicker from '../components/ImagePicker';
-import {HTMLText, EditMembershipCategory} from '../components';
-import ClubCategoryPicker from '../components/ClubCategoryPicker';
-import Comments from '../containers/Comments/Comments';
-import EventDetails from '../containers/EventDetails';
+import DiscoverClub from "../containers/DiscoverClub";
+import ClubMap from "../containers/ClubMap";
+import QRCode from "../containers/QRCode";
+import SearchClub from "../containers/SearchClub";
+import CreateClub from "../containers/CreateClub";
+import ConfirmClub from "../containers/CreateClub/confirm";
+import ClubDetail from "../containers/ClubDetail";
+import AboutUs from "../containers/UserProfile/aboutus";
+import BasicSetting from "../containers/UserProfile/BasicSetting";
+import UserClubSettingEdit from "../containers/UserClubSettingEdit";
+import FeatureShop from "../containers/FeatureShop";
+import UserFeatureShop from "../containers/UserFeatureShop";
+import ClubProfile from "../containers/ClubProfile";
+import ClubEditInfo from "../containers/ClubProfile/ClubEditInfo";
+import ClubAddInfo from "../containers/ClubProfile/ClubAddInfo";
+import EditBoard from "../containers/ClubProfile/EditBoard";
+import EditMember from "../containers/ClubProfile/EditMember";
+import Membership from "../containers/ClubProfile/Membership";
+import Contributions from "../containers/ClubProfile/Contributions";
+import ZirklPay from "../containers/ClubProfile/ZirklPay";
+import MemberProfile from "../containers/MemberProfile";
+import CreateNews from "../containers/News/CreateNews";
+import CreateEvent from "../containers/Event/CreateEvent";
+import MultipleFiles from "../containers/Event/CreateEvent/multiplefiles";
+import MultipleLinks from "../containers/Event/CreateEvent/multiplelinks";
+import LocationView from "../containers/Event/LocationView";
+import CreatePost from "../containers/Post/CreatePost";
+import MultipleImages from "../containers/Impression/CreateImpression/components/MultipleImages";
+import CreateImpression from "../containers/Impression/CreateImpression";
+import ZirklSelect from "../components/ZirklSelect";
+import MembershipSelect from "../components/MembershipSelect";
+import ImagePicker from "../components/ImagePicker";
+import { HTMLText, EditMembershipCategory } from "../components";
+import ClubCategoryPicker from "../components/ClubCategoryPicker";
+import Comments from "../containers/Comments/Comments";
+import EventDetails from "../containers/EventDetails";
 
 const ExploreStack = createStackNavigator(
-    {
-        MainScreen,
-        ClubMap,
-        QRCode,
-        Discover: DiscoverClub,
-        SearchClub,
-    },
-    {headerMode: 'none', initialRouteName: 'MainScreen'},
+  {
+    MainScreen,
+    ClubMap,
+    QRCode,
+    Discover: DiscoverClub,
+    SearchClub,
+  },
+  { headerMode: "none", initialRouteName: "MainScreen" }
 );
 const FeedStack = createStackNavigator(
-    {
-        Feed,
-        AboutUs,
-        Comments,
-    },
-    {headerMode: 'none', initialRouteName: 'Feed'},
+  {
+    Feed,
+    AboutUs,
+    Comments,
+  },
+  { headerMode: "none", initialRouteName: "Feed" }
 );
 const ClubsStack = createStackNavigator(
-    {
-        Clubs,
-        CreateNews,
-        CreateEvent,
-        CreatePost,
-        CreateImpression,
-        MultipleFiles,
-        MultipleLinks,
-        ZirklSelect,
-        ImagePicker,
-        ClubCategoryPicker,
-        EditMembershipCategory,
-        CreateClub: {
-            screen: CreateClub,
-            navigationOptions: {
-                gesturesEnabled: false,
-            },
-        },
-        ConfirmClub,
-        ClubDetail,
-        ClubProfile,
-        FeatureShop,
-        ClubEditInfo,
-        Membership,
-        MemberProfile,
-        EditBoard,
-        EditMember,
-        Contributions,
-        ZirklPay,
-        EventDetails,
-        LocationView,
-        MultipleImages,
+  {
+    Clubs,
+    CreateNews,
+    CreateEvent,
+    CreatePost,
+    CreateImpression,
+    MultipleFiles,
+    MultipleLinks,
+    ZirklSelect,
+    ImagePicker,
+    ClubCategoryPicker,
+
+    EditMembershipCategory,
+    CreateClub: {
+      screen: CreateClub,
+      navigationOptions: {
+        gesturesEnabled: false,
+      },
     },
-    {
-        headerMode: 'none',
-        initialRouteName: 'Clubs',
-        navigationOptions: {
-            gesturesEnabled: false,
-        },
+    ConfirmClub,
+    ClubDetail,
+    ClubProfile,
+    FeatureShop,
+    ClubEditInfo,
+    Membership,
+    MemberProfile,
+    EditBoard,
+    EditMember,
+    Contributions,
+    ZirklPay,
+    EventDetails,
+    LocationView,
+    MultipleImages,
+  },
+  {
+    headerMode: "none",
+    initialRouteName: "Clubs",
+    navigationOptions: {
+      gesturesEnabled: false,
     },
+  }
 );
 const SettingsStack = createStackNavigator(
-    {
-        UserSetting,
-        NotificationSettings,
-        UserProfile,
-        BasicSetting,
-        UserClubSettingEdit,
-        ClubAddInfo,
-        HTMLText,
-        MembershipSelect,
-        UserFeatureShop,
-    },
-    {headerMode: 'none', initialRouteName: 'UserSetting'},
+  {
+    UserSetting,
+    NotificationSettings,
+    UserProfile,
+    BasicSetting,
+    UserClubSettingEdit,
+    ClubAddInfo,
+    HTMLText,
+    MembershipSelect,
+    UserFeatureShop,
+  },
+  { headerMode: "none", initialRouteName: "UserSetting" }
 );
 
 const TabNavigator = createBottomTabNavigator(
-    {
-        DiscoverTab: {
-            screen: ExploreStack,
-            navigationOptions: {
-                title: 'Home',
-            },
-        },
-        FeedTab: {
-            screen: FeedStack,
-            navigationOptions: {
-                title: 'Feed',
-            },
-        },
-        ClubsTab: {
-            screen: ClubsStack,
-            navigationOptions: {
-                title: 'Vereine',
-            },
-        },
-        SettingsTab: {
-            screen: SettingsStack,
-            navigationOptions: {
-                title: 'Settings',
-            },
-        },
+  {
+    DiscoverTab: {
+      screen: ExploreStack,
+      navigationOptions: {
+        title: "Home",
+      },
     },
-    {
-        initialRouteName: 'DiscoverTab',
-        defaultNavigationOptions: props => ({
-            tabBarIcon: ({focused, horizontal, tintColor}) => {
-                const {routeName} = props.navigation.state;
-
-                switch (routeName) {
-                    case 'SettingsTab':
-                        return (
-                            <Icon name="settings" size={25} color={tintColor} />
-                        );
-                    case 'ClubsTab':
-                        return <Icon name="grid" size={25} color={tintColor} />;
-                    case 'FeedTab':
-                        return (
-                            <SvgXml
-                                xml={focused ? active_feed_xml : feed_xml}
-                                width={25}
-                                height={25}
-                            />
-                        );
-                    case 'DiscoverTab':
-                        return (
-                            <SvgXml
-                                xml={focused ? active_home_xml : home_xml}
-                                width={25}
-                                height={25}
-                            />
-                        );
-
-                    default:
-                        break;
-                }
-            },
-
-            tabBarOnPress: ({defaultHandler}) => {
-                const {routeName} = props.navigation.state;
-                const {user} = props.screenProps;
-                console.log('tabBarOnPress -> user', user, routeName);
-
-                if (
-                    routeName !== 'DiscoverTab' &&
-                    routeName !== 'SettingsTab' &&
-                    !user
-                ) {
-                    return;
-                }
-
-                defaultHandler();
-            },
-        }),
-        navigationOptions: {gesturesEnabled: false},
-        tabBarOptions: {
-            style: {
-                height: 65,
-                paddingVertical: 8,
-            },
-            // tabStyle: {paddingVertical: 10},
-            activeTintColor: PRIMARY_COLOR,
-            inactiveTintColor: '#C4C4C4',
-            safeAreaInset: {
-                bottom: 'always',
-            },
-        },
+    FeedTab: {
+      screen: FeedStack,
+      navigationOptions: {
+        title: "Feed",
+      },
     },
+    ClubsTab: {
+      screen: ClubsStack,
+      navigationOptions: {
+        title: "Vereine",
+      },
+    },
+    SettingsTab: {
+      screen: SettingsStack,
+      navigationOptions: {
+        title: "Settings",
+      },
+    },
+  },
+  {
+    initialRouteName: "DiscoverTab",
+    defaultNavigationOptions: (props) => ({
+      tabBarIcon: ({ focused, horizontal, tintColor }) => {
+        const { routeName } = props.navigation.state;
+
+        switch (routeName) {
+          case "SettingsTab":
+            return <Icon name="settings" size={25} color={tintColor} />;
+          case "ClubsTab":
+            return <Icon name="grid" size={25} color={tintColor} />;
+          case "FeedTab":
+            return (
+              <SvgXml
+                xml={focused ? active_feed_xml : feed_xml}
+                width={25}
+                height={25}
+              />
+            );
+          case "DiscoverTab":
+            return (
+              <SvgXml
+                xml={focused ? active_home_xml : home_xml}
+                width={25}
+                height={25}
+              />
+            );
+
+          default:
+            break;
+        }
+      },
+
+      tabBarOnPress: ({ defaultHandler }) => {
+        const { routeName } = props.navigation.state;
+        const { user } = props.screenProps;
+        console.log("tabBarOnPress -> user", user, routeName);
+
+        if (
+          routeName !== "DiscoverTab" &&
+          routeName !== "SettingsTab" &&
+          !user
+        ) {
+          return;
+        }
+
+        defaultHandler();
+      },
+    }),
+    navigationOptions: { gesturesEnabled: false },
+    tabBarOptions: {
+      style: {
+        height: 65,
+        paddingVertical: 8,
+      },
+      // tabStyle: {paddingVertical: 10},
+      activeTintColor: PRIMARY_COLOR,
+      inactiveTintColor: "#C4C4C4",
+      safeAreaInset: {
+        bottom: "always",
+      },
+    },
+  }
 );
 
 export default TabNavigator;

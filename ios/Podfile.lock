@@ -312,13 +312,13 @@ PODS:
   - React-jsinspector (0.61.5)
   - react-native-calendar-events (1.7.3):
     - React
-  - react-native-camera (3.40.0):
+  - react-native-camera (3.43.8):
     - React-Core
-    - react-native-camera/RCT (= 3.40.0)
-    - react-native-camera/RN (= 3.40.0)
-  - react-native-camera/RCT (3.40.0):
+    - react-native-camera/RCT (= 3.43.8)
+    - react-native-camera/RN (= 3.43.8)
+  - react-native-camera/RCT (3.43.8):
     - React-Core
-  - react-native-camera/RN (3.40.0):
+  - react-native-camera/RN (3.43.8):
     - React-Core
   - react-native-cameraroll (1.8.1):
     - React
@@ -375,11 +375,11 @@ PODS:
     - React
   - rn-fetch-blob (0.12.0):
     - React-Core
-  - RNAppleAuthentication (2.1.0):
+  - RNAppleAuthentication (2.1.2):
     - React-Core
   - RNCAsyncStorage (1.12.1):
     - React-Core
-  - RNDeviceInfo (7.1.0):
+  - RNDeviceInfo (7.4.0):
     - React-Core
   - RNDynamicCropper (0.1.0):
     - React
@@ -393,8 +393,8 @@ PODS:
     - Fabric
     - Firebase/Core
     - React
-  - RNGestureHandler (1.8.0):
-    - React
+  - RNGestureHandler (1.10.3):
+    - React-Core
   - RNGoogleSignin (3.0.4):
     - GoogleSignIn (~> 5.0.0)
     - React
@@ -411,7 +411,7 @@ PODS:
     - TOCropViewController
   - RNPermissions (2.2.2):
     - React-Core
-  - RNReanimated (1.13.2):
+  - RNReanimated (1.13.3):
     - React-Core
   - RNScreens (1.0.0-alpha.23):
     - React
@@ -672,7 +672,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
   react-native-calendar-events: 2fe35a9294af05de0ed819d3a1b5dac048d2c010
-  react-native-camera: 5c1fbfecf63b802b8ca4a71c60d30a71550fb348
+  react-native-camera: 894cdcb9e5bfe41719513ad95e0cd1d108b79ee6
   react-native-cameraroll: 3e8adeb9ebf054c75054bf2b9cbbd53cd188c05d
   react-native-contacts: 7b5e16196278636030c3fbbb9505543984b01697
   react-native-document-picker: c5752781fbc0c126c627c1549b037c139444a4cf
@@ -692,17 +692,17 @@ SPEC CHECKSUMS:
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
   ReactNativeART: f003b07dfa7098aa419ed95b69560923440b1eee
   rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
-  RNAppleAuthentication: 46cbc67739bae83ca229497f9b0038f3f5431443
+  RNAppleAuthentication: e95bcfbd044013667f35c5ca20ae17d39500c009
   RNCAsyncStorage: cb9a623793918c6699586281f0b51cbc38f046f9
-  RNDeviceInfo: 2c198acf2cef2dc8e5bf2b502fdde0e7e5ef3520
+  RNDeviceInfo: febcb25b09201a312c66c36ecc1f155c5a43eecc
   RNDynamicCropper: 3a121bcdd85032fadd7cb2c14668d0370614b043
   RNFirebase: b627e5991bb10bf34cea84806819f98f95f39f8b
-  RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
+  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNGoogleSignin: a00f87261ea13df9a5cea8deafa6927d6f2c3562
   RNIap: 091b98e143440e580e51d08b43a3196ae788e87b
   RNImageCropPicker: 38865ab4af1b0b2146ad66061196bc0184946855
   RNPermissions: 067727df624665d4a6c8e2cffcc172ba608b96ed
-  RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
+  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
   RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
   RNShare: 7e22ba3bf66294ff7c122a1f2da8a8ec642091a0
   RNSVG: 67f1f12dae2cef6ed59a42cae74a6b8f5a9e7b46
@@ -714,4 +714,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8e33410f9a0dac2ef88b42c6f86de273295f2ac5
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
